@@ -1,0 +1,241 @@
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*CSS Variables*/
+:root{
+	--navbar-height:59px;
+}
+/*NAVIGATION BAR*/
+
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+
+/* NAVIGATION BAR : LOGO AND IMAGES */
+#logo{
+	margin: 10px 34px;
+}
+#logo img{
+	height: 113px;
+    margin: 18px 19px
+}
+
+/* NAVIGATION BAR : LIST STYLING */
+#navbar ul{
+	display: flex;
+	font-family: 'Grenze Gotisch', cursive;
+}
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4; 
+}
+
+#navbar ul li a:hover{
+	transform: scale(1.5);
+}
+#navbar ul li{
+	/*color: white;*/
+	list-style: none;
+	font font-size: 1.3rem;
+}
+
+#navbar ul li a{
+	color: white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+ /*HOME SECTION*/
+ #home{
+
+ 	display: flex;
+ 	flex-direction: column;
+ 	padding: 3px 200px;
+ 	height: 713px;
+ 	justify-content: center;
+ 	align-items: center;
+
+ }
+  #home::before {
+  		content: "";
+	background: url("pexels-rajesh-tp-1624487.jpg") no-repeat center center/cover;
+	/*background-size: cover;*/
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity:0.89;
+
+ 	
+ }
+
+ #home h1{
+ 	color: white;
+ 	text-align: center;
+ 	font-family: 'Rancho', cursive;
+ }
+
+ #home p{
+ 	color: white;
+ 	text-align: center;
+ 	font-size: 1.5rem;
+ 	font-family: 'Rancho', cursive;
+ }
+
+ /*utility class*/
+ .h-primary{
+ 	font-size: 3rem;
+ 	padding: 12px;
+ 	font-family: 'Grenze Gotisch', cursive;
+ }
+
+ .h-primary center
+
+ .h-secondary{
+ 	font-size: 1.8rem;
+ 	padding: 12px;
+ 	font-family: 'Grenze Gotisch', cursive;
+ }
+ .btn{
+ 	padding: 6px 20px;
+ 	border: 2px solid white;
+ 	background-color: #2335b8;
+ 	color: white;
+ 	margin: 17px; 
+ 	border-radius: 10px;
+ 	font-size: 1.5rem;
+ 	cursor: pointer;
+  }
+
+  	.btn:hover{
+   		background-color: #1fe5fa;
+   		transform: scale(1.5);
+   	}
+
+  .center{
+  	text-align: center;
+  }
+
+/*services section*/
+
+#Services{
+	margin: 34px;
+	display: flex;
+}
+#Services .box{
+      border: 2px solid brown;
+      padding: 34px;
+      margin: 25px 6px;
+      border-radius: 28px;
+      background-color:#edff00;
+      margin-bottom: 20px;
+}
+
+#Services .box img{
+	height: 160px;
+	margin: auto;
+	display: block;
+}
+
+#services .box p{
+	font-family: 'Rancho', cursive;
+}
+ /*client section*/
+ #clients{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+    flex-wrap: wrap;
+}
+#client-section{
+	height: 344px;
+	/*position: relative;*/
+}
+#client-section::before{
+	content: "";
+	position: absolute;
+	background: url(img7.jpg);
+	width: 100%;
+	height: 46%;
+	z-index: -1;
+	opacity: 0.4;
+
+}
+
+.client-item{
+	padding: 25px;
+}
+
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+
+/* Contact us section */
+
+
+#contact{
+    position: relative;
+}
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('ak9.jpg') no-repeat center center/cover;
+  
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+  font-family: 'Rancho', cursive;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
